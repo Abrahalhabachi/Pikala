@@ -16,7 +16,7 @@ $error="The passwords don't match";
         <div class="img"></div>
         <div class="title">REGISTER</div>
 
-        <form action="<?=$_SERVER['SCRIPT_NAME']?>?p=Register" method="post">
+        <form action="<?=$_SERVER['SCRIPT_NAME']?>?p=home" method="post">
 
         <label for="fname">Firstname</label>
         <input type="text" name="fname" id="fname" placeholder="Firstname" required
@@ -53,7 +53,7 @@ $error="The passwords don't match";
         value="<?=isset($error)&&isset($_POST['zip_code']) ? htmlspecialchars($_POST['zip_code']):''?>">
     
         <div>
-        <input type="submit" name="submitRegister" value="Register">
+        <input type="submit" name="submitRegister" value="register">
         </div>
             
             <div class="clear"></div>

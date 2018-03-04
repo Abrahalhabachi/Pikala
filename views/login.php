@@ -5,20 +5,15 @@
         <div class="title">LOGIN</div>
 
         <form action="<?=$_SERVER['PHP_SELF'].'?p=home';?>" method="post">
-            <label for="loginName">Email oder Benutzername</label>
-            <input type="text" name="validationName" id="loginName" placeholder="ihre@mail.de"
+            <label for="loginName">Email</label>
+            <input type="text" name="validationName" id="loginName" placeholder="Email address" required
             <?=isset($_POST['validationName']) ? 'value="'.htmlspecialchars($_POST['validationName']).'"' : ''?>>
             
-            <label for="loginPassword">Passwort</label>
-            <input type="password" name="validationPassword" id="loginPassword" placeholder="Passwort">
+            <label for="loginPassword">Password</label>
+            <input type="password" name="validationPassword" id="loginPassword" placeholder="Password" required>
             
-            <input type="submit" name="submitLogin" value="anmelden">
-            
-            <input type="checkbox" name="rememberMe" id="check"
-            <?=isset($_POST['rememberMe']) ? 'checked' : ''?>>
-            <label for="check">angemeldet bleiben?</label>
-            
-            <a href="<?=$_SERVER['PHP_SELF']?>?p=Register">Noch kein Konto?</a>
+            <input type="submit" name="submitLogin" value="log in">
+            <a href="<?=$_SERVER['PHP_SELF']?>?p=register">Create a new account</a>
             
             <div class="clear"></div>
         </form>

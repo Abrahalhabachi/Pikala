@@ -1,16 +1,14 @@
-<header class="override">
+<header>
     <nav>
-        <ul>
-            <li><a href="<?=$_SERVER['SCRIPT_NAME']?>?p=home" >Home</a></li>
-            <li><a href="<?=$_SERVER['SCRIPT_NAME']?>?p=page1">About Us</a></li>
-            <li><a href="<?=$_SERVER['SCRIPT_NAME']?>?p=page2">How It Works</a></li>
+        <ul class="left_side">
+            <li><a href="<?=$_SERVER['PHP_SELF']?>?p=home">Home</a></li>
         </ul>
-                <form action="<?=$_SERVER['PHP_SELF'].'?p=register';?>" method="post">
-                <input type="submit" name="registerButton" value="Register">
-                </form>
-                <form action="<?=$_SERVER['PHP_SELF'].'?p=login';?>" method="post">
-                <input type="submit" name="loginButton" value="Login">
-                </form>
+
+        <ul class="right_side">
+            <div></div>
+            <li><a href="<?=$_SERVER['SCRIPT_NAME']?>?p=login">Login</a></li>
+            <li><a href="<?=$_SERVER['SCRIPT_NAME']?>?p=register">Register</a></li>
+        </ul>
     </nav>
 </header>
 <main>
